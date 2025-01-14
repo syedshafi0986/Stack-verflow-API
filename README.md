@@ -25,8 +25,8 @@ This project provides backend functionality for managing questions and answers u
 - **Supported Filtering**:
   - `is_answered` (true/false): Filter questions based on whether they are answered.
   - `tags` (comma-separated values): Filter by tags.
-  - `answers_count__gt`: Filter questions with answers count greater than the specified value.
-  - `answers_count__lt`: Filter questions with answers count less than the specified value.
+  - `ans_count__gt`: Filter questions with answers count greater than the specified value.
+  - `ans_count__lt`: Filter questions with answers count less than the specified value.
 - **Supported Sorting**:
   - `sort=score`: Sort by score (Trending).
   - `sort=created_at`: Sort by creation date (Latest).
@@ -34,7 +34,7 @@ This project provides backend functionality for managing questions and answers u
   - Use `page` (e.g., `page=1`) for pagination.
 
 **Example**:
-GET /questions?is_answered=true&tags=javascript&ans_count**gt=5&ans_count**lt=10&sort=score&page=1
+GET /questions?is_answered=true&tags=javascript&ans_count\_\_gt=5&ans_count\_\_lt=10&sort=score&page=1
 
 ### POST `/questions`
 

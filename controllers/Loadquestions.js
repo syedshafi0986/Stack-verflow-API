@@ -18,7 +18,7 @@ const Loadquestions = async (req, res) => {
       created_at: new Date(item.creation_date * 1000),
       answers_count: item.answer_count,
     }));
-    console.log("Mapped Questions:", questions.stackOverflowId);
+    // console.log("Mapped Questions:", questions.stackOverflowId);
 
 
     // Insert questions into the database
